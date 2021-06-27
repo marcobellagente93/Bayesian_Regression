@@ -1,0 +1,4 @@
+# Ignore certain folders
+########################
+
+__pycache__/
