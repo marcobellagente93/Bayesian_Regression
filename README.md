@@ -12,9 +12,13 @@ In order to capture epistemic uncertainty in a neural network we can place a pri
 using Bayesian inference to estimate the posterior
 <img src="https://render.githubusercontent.com/render/math?math=p(\textbf{\theta}| \text{Data})">.
 
-In order to make the posterior tractable for a neural network we employ variational inference, approximating the true posterior with a mean-field Gaussian. For a regression task we can define the likelihood as a Gaussian, resulting in the miniminsation objective:
+In order to make the posterior tractable for a neural network we employ variational inference, approximating the true posterior with a mean-field Gaussian. For a regression task, using a Gaussian likelihood, and employing a model which outputs the predictive mean and variance <img src="https://render.githubusercontent.com/render/math?math=(\textbf{\hat{y}}, \hat{\sigma}^2)">
 
-<img src="https://render.githubusercontent.com/render/math?math=-\logp(y_i| \mu_{\theta}(x_i)) \sim \frac{1}{2 \sigma^2} |y_i - \mu_{\theta}(x_i)|">.
+we get the minimisation objective
+
+<img src="https://render.githubusercontent.com/render/math?math=\mathcal{L}(\theta) ~ p(y_i| \mu_{\theta}(\textbf{x}_i)) \sim \frac{1}{2 \sigma^2} |\textbf{y}_i - \mu_{\theta}(x_i)|_{L2} + \frac{1}{2} \log \hat{\sigma}^2">
+
+with 
 
 ## Notebooks
 
