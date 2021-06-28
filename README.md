@@ -7,7 +7,9 @@ These uncertainties can be estimated via Bayesian Deep Learning, resulting in po
 
 ## Method
 The method presented was first developed in [arXiv:1703.04977](https://arxiv.org/pdf/1703.04977.pdf), and translated into a particle physics applications in [arXiv:2003.11099](https://arxiv.org/abs/2003.11099) and [arxiv:2104.04543](https://arxiv.org/pdf/2104.04543.pdf).
-In order to capture epistemic uncertainty in a neural network we can place a prior over its parameters <img src="https://render.githubusercontent.com/render/math?math=b = S_{xy}/S_{xx}">
+In order to capture epistemic uncertainty in a neural network we can place a prior over its parameters 
+
+<img src="https://render.githubusercontent.com/render/math?math=\theta \sim \mathcal{N}(\mu, \sigma)">
 
 ## Notebooks
 
