@@ -1,5 +1,5 @@
 # Variational Inference Bayesian Neural Networks
-
+## Uncertainties in deep learning
 Modern deep learning models are typically unable to deal with uncertainties, for instance in classification or regression tasks.
 These uncertainties can be estimated via Bayesian Deep Learning, resulting in powerful tools which are able to capture aleatoric and epistemic uncertainties:
 * aleatoric uncertainties: noise inherent in the data, which cannot be reduced by increasing the dataset size;
