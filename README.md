@@ -9,8 +9,12 @@ These uncertainties can be estimated via Bayesian Deep Learning, resulting in po
 The method presented was first developed in [arXiv:1703.04977](https://arxiv.org/pdf/1703.04977.pdf), and translated into a particle physics applications in [arXiv:2003.11099](https://arxiv.org/abs/2003.11099) and [arxiv:2104.04543](https://arxiv.org/pdf/2104.04543.pdf).
 In order to capture epistemic uncertainty in a neural network we can place a prior over its parameters 
 <img src="https://render.githubusercontent.com/render/math?math=\textbf{\theta} \sim \mathcal{N}(\mu, \sigma)">
-using Bayesian inference to compute the posterior 
-<img src="https://render.githubusercontent.com/render/math?math=p(\textbf{\theta}| Observables)">
+using Bayesian inference to estimate the posterior
+<img src="https://render.githubusercontent.com/render/math?math=p(\textbf{\theta}| \text{Data})">.
+
+In order to make the posterior tractable for a neural network we employ variational inference, approximating the true posterior with a mean-field Gaussian. For a regression task we can define the likelihood as a Gaussian, resulting in the miniminsation objective:
+
+<img src="https://render.githubusercontent.com/render/math?math=-\logp(y_i| \mu_{\theta}(x_i)) \sim \frac{1}{2 \sigma^2} |y_i - \mu_{\theta}(x_i)|">.
 
 ## Notebooks
 
