@@ -12,11 +12,11 @@ In order to capture epistemic uncertainty in a neural network we can place a pri
 using Bayesian inference to estimate the posterior
 <img src="https://render.githubusercontent.com/render/math?math=\large p(\textbf{\theta}| \text{Data})">.
 
-In order to make the posterior tractable for a neural network we employ variational inference, approximating the true posterior with a mean-field Gaussian. For a regression task, using a Gaussian likelihood, and employing a model which outputs the predictive mean and variance <img src="https://render.githubusercontent.com/render/math?math=(\textbf{\hat{y}}, \hat{\sigma}^2)">
+In order to make the posterior tractable for a neural network we employ variational inference, approximating the true posterior with a mean-field Gaussian. For a regression task, using a Gaussian likelihood, and employing a model which outputs the predictive mean and variance <img src="https://render.githubusercontent.com/render/math?math=\large (\textbf{\hat{y}}, \hat{\sigma}^2)">
 
 we get the minimisation objective
 
-<img src="https://render.githubusercontent.com/render/math?math=\Large L(\theta) = \frac{1}{2 \hat{\sigma}_i^2} ||\textbf{y}_i - \textbf{\hat{y}}_i|| %2B \frac{1}{2} \log \hat{\sigma}_i^2 %2B KL(q(\theta) || p(\theta | Data))">.
+<img src="https://render.githubusercontent.com/render/math?math=\large L(\theta) = \frac{1}{2 \hat{\sigma}_i^2} ||\textbf{y}_i - \textbf{\hat{y}}_i|| %2B \frac{1}{2} \log \hat{\sigma}_i^2 %2B">.
 
 ## Notebooks
 
