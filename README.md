@@ -16,7 +16,7 @@ In order to make the posterior tractable for a neural network we employ variatio
 
 we get the minimisation objective
 
-<img src="https://render.githubusercontent.com/render/math?math=L(\theta) = \frac{1}{2} \log \hat{\sigma}_i^2 + \frac{1}{2 \hat{\sigma}_i^2} ||\textbf{y}_i - \textbf{\hat{y}}_i||+\frac{1}{2} \log \hat{\sigma}_i^2">
+<img src="https://render.githubusercontent.com/render/math?math=L(\theta) = \frac{1}{2 \hat{\sigma}_i^2} ||\textbf{y}_i - \textbf{\hat{y}}_i|| %2B \frac{1}{2} \log \hat{\sigma}_i^2">
 
 with 
 
